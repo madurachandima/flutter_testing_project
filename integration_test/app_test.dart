@@ -38,7 +38,7 @@ void main() {
       await tester.pumpAndSettle();
 
       expect((showText.first.evaluate().single.widget as Text).data,
-          "Hello Flutter Fail Test");
+          "Hello Flutter");
     });
   });
 }
