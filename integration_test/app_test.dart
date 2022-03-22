@@ -34,11 +34,11 @@ void main() {
       await tester.pumpAndSettle();
 
       final showText = find.byKey(const Key("showText"));
-      print((showText.first.evaluate().single.widget as Text).data);
+      // print((showText.first.evaluate().single.widget as Text).data);
       await tester.pumpAndSettle();
 
       expect((showText.first.evaluate().single.widget as Text).data,
-          "Hello Flutter");
+          "Hello Flutter Fail Test");
     });
   });
 }
